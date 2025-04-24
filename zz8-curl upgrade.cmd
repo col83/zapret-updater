@@ -12,7 +12,7 @@ cls
 ping -n 4 -l 64 -4 8.8.8.8
 
 if ERRORLEVEL 1 cls & echo. & echo ping test failure. terminate update & echo. & pause & exit
-if ERRORLEVEL 0 cls goto start
+if ERRORLEVEL 0 cls & goto start
 
 
 :start
