@@ -30,7 +30,7 @@ cls
 if exist ".\zapret-win" echo. & echo Deleting old version... & rd /s /q zapret-win
 
 echo.
-echo Downloading latest version...
+echo Downloading latest zapret version...
 echo.
 .\curl\curl.exe -fJL -# -o .\zapret-win.zip %URL%
 
