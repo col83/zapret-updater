@@ -1,0 +1,1 @@
+if exist ".\zapret-win" (call ".\zapret-win\zapret-winws\preset_russia.cmd")
