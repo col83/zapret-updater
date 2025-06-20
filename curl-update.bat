@@ -30,7 +30,7 @@ copy /V /Y .\curl-temp\curl.exe ".\"
 copy /V /Y .\curl-temp\curl-ca-bundle.crt ".\"
 
 :: install curl certificate
-certutil -addstore -f CA .\curl-ca-bundle.crt
+certutil -addstore -f "Root" .\curl-ca-bundle.crt
 
 del /q .\curl-temp.zip
 rd /s /q .\curl-temp
