@@ -9,10 +9,12 @@ echo.
 
 :test
 echo test internet connection..
-ping -n 4 -l 64 -4 8.8.8.8 >/NUL
-
-if ERRORLEVEL 1 cls & echo. & echo error & echo. & pause & exit 0
-if ERRORLEVEL 0 goto start
+ping -n 4 -l 32 -w 10 -4 8.8.8.8 >/NUL
+if not errorlevel 1 (
+goto start
+) else (
+cls & echo. & echo test failded. check your interner & echo. & pause & exit 0
+)
 
 
 :start
