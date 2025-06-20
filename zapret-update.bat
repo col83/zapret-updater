@@ -18,7 +18,7 @@ ping -n 4 -l 32 -w 10 -4 8.8.8.8 >/NUL
 if not errorlevel 1 (
 goto start
 ) else (
-cls & echo. & echo test failded. check your interner & echo. & pause & exit 0
+cls & echo. & echo test failded. check your interner & echo. & pause & exit 1
 )
 
 
