@@ -16,7 +16,6 @@ goto start
 cls & echo. & echo test failded. check your interner & echo. & pause & exit 1
 )
 
-
 :start
 
 cls
@@ -28,9 +27,6 @@ echo.
 .\7za.exe e .\curl-temp.zip -ssp -ocurl-temp -y
 copy /V /Y .\curl-temp\curl.exe ".\"
 copy /V /Y .\curl-temp\curl-ca-bundle.crt ".\"
-
-:: install curl certificate
-certutil -addstore -f "Root" .\curl-ca-bundle.crt
 
 del /q .\curl-temp.zip
 rd /s /q .\curl-temp
