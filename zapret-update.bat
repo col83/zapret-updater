@@ -1,5 +1,7 @@
 @echo off
 
+title zapret-windows update
+
 set URL=https://github.com/bol-van/zapret-win-bundle/archive/refs/heads/master.zip
 
 cd /d %~dp0

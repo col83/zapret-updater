@@ -1,5 +1,7 @@
 @echo off
 
+title cURL update
+
 set URL=https://curl.se/windows/latest.cgi?p=win64-mingw.zip
 
 cd /d %~dp0
